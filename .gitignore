@@ -1,3 +1,5 @@
 __pycache__/*
 .idea/*
 .venv/*
+dist/*
+py_vs_github_starter.egg-info/*
