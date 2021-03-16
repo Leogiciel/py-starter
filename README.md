@@ -7,7 +7,7 @@
 
 Starter python library project for VSCode with built-in features:
  - Preconfigured venv with linters and formatters
- - Unit tests to run in tests.py. They can be run in debug with the "Launch current file" debug config, or in Tests explorer tab.
+ - Unit tests to run in tests.py
  - README.md template (this one)
  - Preconfigured lint.yml for GitHub Workflow
  - Preconfigured ci.yml for Github Workflow (runs test.py unit tests)
@@ -27,23 +27,31 @@ Starter python library project for VSCode with built-in features:
 
 ## Usage ##
 
+### Installation ###
+
  - Clone this repo
  - Open a terminal in local folder
  - Create virtual environment : 
- '''lang-txt
+ ````lang-txt
     py -3 -m venv .venv
     .venv\scripts\activate
- '''
+ ````
  - Install dependencies :
- '''lang-txt
+ ````lang-txt
     python -m pip install --upgrade pip
     pip install -r requirements.txt
- '''
+ ````
  - Enjoy
 
 ### tests.py ###
 
-This file can be run. It executes unit tests on given functional requirements.
+This file can be run :
+ - in debugger using the preconfigured "Launch current file" debug config
+ - in Tests explorer tab
+ - via Terminal with :
+````lang-txt
+python -m unittest tests.py
+````
 
 ## Changelog ##
 
