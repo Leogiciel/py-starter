@@ -1,7 +1,7 @@
 # py-stars #
 
-[![Lint Code Base](https://github.com/Leogiciel/py-starter/actions/workflows/linter.yml/badge.svg?branch=dev)](https://github.com/Leogiciel/py-starter/actions/workflows/linter.yml)
-[![Unit tests](https://github.com/Leogiciel/py-starter/actions/workflows/ci.yml/badge.svg?branch=dev)](https://github.com/Leogiciel/py-starter/actions/workflows/ci.yml)
+[![Lint Code Base](https://github.com/Leogiciel/py-starter/actions/workflows/linter.yml/badge.svg?branch=master)](https://github.com/Leogiciel/py-starter/actions/workflows/linter.yml)
+[![Unit tests](https://github.com/Leogiciel/py-starter/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/Leogiciel/py-starter/actions/workflows/ci.yml)
 
 ## Description ##
 
