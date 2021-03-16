@@ -62,6 +62,10 @@ jobs:
       ##########################
       #### Publish package #####
       ##########################
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
       - name: Publish package
         env:
           TWINE_USERNAME: "__token__"
