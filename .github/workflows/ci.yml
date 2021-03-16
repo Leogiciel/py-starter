@@ -53,4 +53,4 @@ jobs:
       ##### Run unit tests #####
       ##########################
       - name: Unit tests
-        run: python -m unittest main.py
+        run: python -m unittest tests.py
