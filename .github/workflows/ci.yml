@@ -4,7 +4,7 @@
 # Unit tests GitHub Actions #
 #############################
 #############################
-name: Unit tests
+name: CI
 
 #############################
 # Start the job on all push #
@@ -19,7 +19,7 @@ on:
 jobs:
   build:
     # Name the Job
-    name: Unit tests
+    name: Run tests then publish package
     # Set the agent to run on
     runs-on: ubuntu-latest
 
@@ -54,6 +54,9 @@ jobs:
       ##########################
       - name: Unit tests
         run: python -m unittest tests.py
+      ##########################
+      #### Generate package ####
+      ##########################
       - name: Generate package
         run: python setup.py sdist bdist_wheel
       #- name: Publish package
