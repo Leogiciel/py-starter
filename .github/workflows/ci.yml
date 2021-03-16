@@ -67,5 +67,5 @@ jobs:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
         run: |
-        echo TWINE_PASSWORD | sed -e 's/\(.\)/\1 /g'
-        twine upload dist/*
+          echo TWINE_PASSWORD | sed -e 's/\(.\)/\1 /g'
+          twine upload dist/*
