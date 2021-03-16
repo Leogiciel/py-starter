@@ -1,6 +1,6 @@
 import pathlib
 
-from setuptools import find_packages, setup
+from setuptools import find_packages, setup  # type: ignore
 
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
@@ -26,6 +26,6 @@ setup(
     ],
     packages=find_packages(exclude="tests"),
     include_package_data=True,
-    install_requires=["wheel", "bumpversion", "black", "isort", "mypy"],
+    install_requires=[],
     entry_points={"console_scripts": []},
 )

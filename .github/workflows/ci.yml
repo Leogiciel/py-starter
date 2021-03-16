@@ -57,17 +57,13 @@ jobs:
       ##########################
       #### Generate package ####
       ##########################
-      - name: Generate package
-        run: python setup.py sdist bdist_wheel
+      ##- name: Generate package
+      ##  run: python setup.py sdist bdist_wheel
       ##########################
       #### Publish package #####
       ##########################
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
-      - name: Publish package
-        env:
-          TWINE_USERNAME: "__token__"
-          TWINE_PASSWORD: "${{ secrets.PYPI_TOKEN }}"
-        run: twine upload dist/* --verbose
+      ##- name: Publish package
+      ##  env:
+      ##    TWINE_USERNAME: __token__
+      ##    TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+      ##  run: twine upload dist/*
