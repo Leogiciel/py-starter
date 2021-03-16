@@ -57,13 +57,15 @@ jobs:
       ##########################
       #### Generate package ####
       ##########################
-      ##- name: Generate package
-      ##  run: python setup.py sdist bdist_wheel
+      - name: Generate package
+        run: python setup.py sdist bdist_wheel
       ##########################
       #### Publish package #####
       ##########################
-      ##- name: Publish package
-      ##  env:
-      ##    TWINE_USERNAME: __token__
-      ##    TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
-      ##  run: twine upload dist/*
+      - name: Publish package
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+        run: |
+        echo TWINE_PASSWORD | sed -e 's/\(.\)/\1 /g'
+        twine upload dist/*
